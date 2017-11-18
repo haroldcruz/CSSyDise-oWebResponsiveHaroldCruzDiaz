@@ -1,8 +1,8 @@
 header{
+
 background: #5b7989;
 color: white;
 height: 80px;
-text-shadow:  2px 2px 2px #02010a ;
 border-radius: 10px;
 width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
 left: 0; /* Posicionamos la cabecera al lado izquierdo */
@@ -10,6 +10,29 @@ top: 0; /* Posicionamos la cabecera pegada arriba */
 position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 /*  fuente: https://franciscoamk.com/como-crear-una-fija-estatica-con-html-y-css/*/
 }
+header h1{
+  text-shadow:  2px 2px 2px #02010a ;
+}
 p{
   font-size: 1.5em;
+}
+#SinSubrayado {
+  text-decoration:none;
+}
+.ContenedorCentral{
+  margin-top: 115px;
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 25px 150px 25px 150px;
+	display: flex;
+	flex-flow: row wrap;
+  text-align: center;
+  background-color:  #82c3a6;
+}
+.ImagenCentral img{
+width: 90%;
+text-align: center;
+margin: auto;
+
+border-radius: 10px;
 }
