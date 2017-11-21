@@ -21,8 +21,8 @@ p{
 }
 .ContenedorCentral{
   margin-top: 115px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 250px;
+  margin-right: 250px;
   padding: 25px 150px 25px 150px;
 	display: flex;
 	flex-flow: row wrap;
@@ -30,9 +30,43 @@ p{
   background-color:  #82c3a6;
 }
 .ImagenCentral img{
-width: 90%;
+width:90%;
 text-align: center;
 margin: auto;
-
 border-radius: 10px;
+}
+.secondaryPictureContainer{
+  background-color: #d5c75f;
+  border: 1px solid;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.secondaryPictureItem{
+  width: 50%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.secondaryPictureItem img{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+@media screen and (max-width: 900px){
+
+.secondaryPictureContainer{
+      flex-flow: column nowrap !important;
+    }
+
+    .secondaryPictureItem{
+      width: 100% !important;
+    }
+
+  }
+#secondaryPictureItem:hover{
+  transform: rotateY(10deg);
 }
