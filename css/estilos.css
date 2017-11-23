@@ -1,5 +1,6 @@
-header{
 
+header{
+font-family: "Dancing Script";
 background: #5b7989;
 color: white;
 height: 100px;
@@ -9,6 +10,10 @@ left: 0; /* Posicionamos la cabecera al lado izquierdo */
 top: 0; /* Posicionamos la cabecera pegada arriba */
 
 /*  fuente: https://franciscoamk.com/como-crear-una-fija-estatica-con-html-y-css/*/
+}
+body{
+  font-family: "Dancing Script";
+  background-color: #02010a;
 }
 header h1{
   text-shadow:  2px 2px 2px #02010a ;
@@ -66,7 +71,9 @@ border-radius: 10px;
     .secondaryPictureItem{
       width: 100% !important;
     }
-
+    footer{
+        flex-flow: column nowrap !important;
+    }
   }
 #secondaryPictureLeft:hover{
   transform: rotate(15deg);
@@ -81,4 +88,63 @@ border: 2px solid;
 }
 footer{
     display: inline-flex;
+    flex-flow: row nowrap;
+    background-color: #C6d5c5;
+    width: 100%;
 }
+.DERECHOS{
+  margin: 50PX;
+  padding: 10px;
+}
+.social{
+  margin: 50PX;
+  padding: 10px;
+}
+.Terminos{
+  margin: 50PX;
+  padding: 10px;
+}
+.Contactos{
+  margin: 50PX;
+  padding: 10px;
+}
+.social img{
+  border-radius: 10px;
+}
+.Contactos img{
+  border-radius: 10px;
+}
+img{
+  text-shadow: #02010a;
+  border: 2px;
+}
+.ContenedorFotos{
+  background-color: #d5c75f;
+  border: 1px solid;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+.ContenedorFotos  img{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+@media screen and (max-width: 900px){
+
+.ContenedorFotos{
+      flex-flow: column nowrap !important;
+    }
+
+    .ContenedorFotos{
+      width: 100% !important;
+    }
+    footer{
+        flex-flow: column nowrap !important;
+    }
+  }
