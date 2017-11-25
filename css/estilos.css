@@ -1,6 +1,8 @@
-
+@font-face {
+font-family:"Dancing Script";
+}
 header{
-font-family: "Dancing Script";
+font-family:"Dancing Script";
 background: #5b7989;
 color: white;
 height: 100px;
@@ -12,7 +14,7 @@ top: 0; /* Posicionamos la cabecera pegada arriba */
 /*  fuente: https://franciscoamk.com/como-crear-una-fija-estatica-con-html-y-css/*/
 }
 body{
-  font-family: "Dancing Script";
+  font-family:"Dancing Script";
   background-color: #02010a;
 }
 header h1{
@@ -148,3 +150,11 @@ img{
         flex-flow: column nowrap !important;
     }
   }
+#img1{
+  filter: blur(10px);
+}
+#img2,#img4,#img6{
+  filter: grayscale(100%);
+}
+#img3{
+  filter:sepia(90%);
